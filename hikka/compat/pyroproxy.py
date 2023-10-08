@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import copy
@@ -57,7 +57,7 @@ class PyroProxyClient(PyroClient):
                 "api_id": tl_client.api_id,
                 "api_hash": tl_client.api_hash,
                 "app_version": (
-                    f"Netfoll v{__version__[0]}.{__version__[1]}.{__version__[2]}"
+                    f"falsetive v{__version__[0]}.{__version__[1]}.{__version__[2]}"
                 ),
                 "lang_code": tl_client.loader.db.get(
                     translations.__name__, "lang", "en"

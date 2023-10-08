@@ -3,13 +3,13 @@
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
 #
 # ---------------------------------------------------------------------------------
-#     ▀▄   ▄▀   👾 Module for Netfoll User Bot (based on Hikka 1.6.0)
+#     ▀▄   ▄▀   👾 Module for falsetive User Bot (based on Hikka 1.6.0)
 #    ▄█▀███▀█▄  🔒 The MIT License (MIT)
-#   █▀███████▀█ ⚠️ Owner @DarkModules and @Netfoll
+#   █▀███████▀█ ⚠️ Owner @DarkModules and @falsetive
 #   █ █▀▀▀▀▀█ █
 #      ▀▀ ▀▀
 # ---------------------------------------------------------------------------------
-# meta developer: @Netfoll
+# meta developer: @falsetive
 
 from .. import loader, utils
 import logging
@@ -27,7 +27,7 @@ class ModsMod(loader.Module):
         "amount": "<emoji document_id=5316573023094971227>📦</emoji> Right now there is <b>{}</b> modules loaded:\n",
         "partial_load": (
             "\n<emoji document_id=5328239124933515868>⚙️</emoji> <b>it's not all modules"
-            " Netfoll is loading</b>"
+            " falsetive is loading</b>"
         ),
         "cmd": "<emoji document_id=546974131930996757> 💫 </emoji> <i><b>To find out the module commands, use <code>{}help</code></i></b>\n",
         "module": "<emoji document_id=5402093879316982515>✨</emoji>",
@@ -38,7 +38,7 @@ class ModsMod(loader.Module):
         "amount": "<emoji document_id=5316573023094971227>📦</emoji> Сейчас загружено <b>{}</b> модулей:",
         "partial_load": (
             "\n<emoji document_id=5328239124933515868>⚙️</emoji> <b>Это не все модули,"
-            " Netfoll загружается</b>"
+            " falsetive загружается</b>"
         ),
         "cmd": "<emoji document_id=5469741319330996757>💫</emoji> <i><b>Чтобы узнать команды модуля используй <code>{}help</code></i></b>\n",
     }
@@ -47,7 +47,7 @@ class ModsMod(loader.Module):
         "amount": "<emoji document_id=5316573023094971227>📦</emoji> Зараз завантажено <b>{}</b> модулей:",
         "partial_load": (
             "\n<emoji document_id=5328239124933515868>⚙️</emoji> <b>Це не всі модулі,"
-            " Netfoll завантажувати</b>"
+            " falsetive завантажувати</b>"
         ),
         "cmd": "<emoji document_id=5469741319330996757>💫</emoji> <i><b>Щоб дізнатися команди модуля використовуй <code>{}help</code></i></b>\n",
     }

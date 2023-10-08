@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import ast
 import contextlib
@@ -24,11 +24,11 @@ from ..inline.types import InlineCall
 
 
 @loader.tds
-class NetfollConfigMod(loader.Module):
-    """Interactive configurator for Netfoll Userbot"""
+class falsetiveConfigMod(loader.Module):
+    """Interactive configurator for falsetive Userbot"""
 
     strings = {
-        "name": "NetfollConfig",
+        "name": "falsetiveConfig",
         "choose_core": "⚙️ <b>Choose a category</b>",
         "configure": "⚙️ <b>Choose a module to configure</b>",
         "configure_lib": "📦 <b>Choose a library to configure</b>",
@@ -131,7 +131,7 @@ class NetfollConfigMod(loader.Module):
             "♻️ <b>Параметр</b> <code>{}</code> <b>библиотеки</b> <code>{}</code><b>"
             " сброшен до значения по умолчанию</b>\n<b>Текущее: {}</b>"
         ),
-        "_cls_doc": "Интерактивный конфигуратор Netfoll",
+        "_cls_doc": "Интерактивный конфигуратор falsetive",
         "args": "🚫 <b>Ты указал неверные аргументы</b>",
         "no_mod": "🚫 <b>Модуль не существует</b>",
         "no_option": "🚫 <b>У модуля нет такого значения конфига</b>",
@@ -197,7 +197,7 @@ class NetfollConfigMod(loader.Module):
             "♻️ <b>Параметр</b> <code>{}</code> <b>бібліотеки</b> <code>{}</code><b>"
             " скинуто до значення за замовчуванням</b>\n<b>Поточний: {}</b>"
         ),
-        "_cls_doc": "Інтерактивний конфігуратор Netfoll",
+        "_cls_doc": "Інтерактивний конфігуратор falsetive",
         "args": "🚫 <b>Ти вказав невірні аргументи</b>",
         "no_mod": "🚫 <b>Модуль не існує</b>",
         "no_option": "🚫 <b>У модуля немає такого значення конфіга</b>",

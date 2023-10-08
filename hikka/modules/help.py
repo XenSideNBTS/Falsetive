@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import difflib
 import inspect
@@ -28,13 +28,13 @@ class HelpMod(loader.Module):
         "name": "Help",
         "undoc": "🦥 No docs",
         "support": (
-            "{}\n\n <b>Link to</b> <a href='https://t.me/AllNetfoll'>support chat</a></b>"
+            "{}\n\n <b>Link to</b> <a href='https://t.me/Allfalsetive'>support chat</a></b>"
         ),
         "not_exact": (
             "<emoji document_id=5312383351217201533>☝️</emoji> <b>No exact match"
             " occured, so the closest result is shown instead</b>"
         ),
-        "request_join": "You requested link for Netfoll support chat",
+        "request_join": "You requested link for falsetive support chat",
         "core_notice": (
             "<emoji document_id=5312383351217201533>☝️</emoji> <b>This is a core"
             " module. You can't unload it nor replace</b>"
@@ -45,14 +45,14 @@ class HelpMod(loader.Module):
     strings_ru = {
         "undoc": "🦥 Нет описания",
         "support": (
-            "{}\n\n <b>Ссылка на</b> <a href='https://t.me/AllNetfoll'>чат помощи</a></b>"
+            "{}\n\n <b>Ссылка на</b> <a href='https://t.me/Allfalsetive'>чат помощи</a></b>"
         ),
         "_cls_doc": "Показывает помощь по модулям",
         "not_exact": (
             "<emoji document_id=5312383351217201533>☝️</emoji> <b>Точного совпадения"
             " не нашлось, поэтому было выбрано наиболее подходящее</b>"
         ),
-        "request_join": "Вы запросили ссылку на чат помощи Netfoll",
+        "request_join": "Вы запросили ссылку на чат помощи falsetive",
         "core_notice": (
             "<emoji document_id=6328010818843575869>ℹ️</emoji> <b>Это встроенный"
             " модуль. Вы не можете его выгрузить или заменить</b>"
@@ -63,14 +63,14 @@ class HelpMod(loader.Module):
     strings_uk = {
         "undoc": "🦥 Немає опису",
         "support": (
-            "{}\n\n <b>Посилання на</b> <a href='https://t.me/AllNetfoll'>чат допомоги</a></b>"
+            "{}\n\n <b>Посилання на</b> <a href='https://t.me/Allfalsetive'>чат допомоги</a></b>"
         ),
         "_cls_doc": "Показує допомогу по модулях",
         "not_exact": (
             "<emoji document_id=5312383351217201533>☝️</emoji> <b>Точного збігу"
             " не знайшлося, тому було вибрано найбільш підходяще</b>"
         ),
-        "request_join": "Ви запросили посилання на чат допомоги Netfoll",
+        "request_join": "Ви запросили посилання на чат допомоги falsetive",
         "core_notice": (
             "<emoji document_id=6328010818843575869>ℹ️</emoji> <b>Це вбудований"
             " модуль. Ви не можете його вивантажити або замінити</b>"
@@ -233,11 +233,11 @@ class HelpMod(loader.Module):
 
         await utils.answer(message, prefix)
 
-    @loader.command(ru_doc="Показать ссылку на чат помощи Netfoll")
+    @loader.command(ru_doc="Показать ссылку на чат помощи falsetive")
     async def support(self, message):
-        """Get link of Netfoll support chat"""
+        """Get link of falsetive support chat"""
         if message.out:
-            await self.request_join("@AllNetfoll", self.strings("request_join"))
+            await self.request_join("@Allfalsetive", self.strings("request_join"))
 
         await utils.answer(
             message,

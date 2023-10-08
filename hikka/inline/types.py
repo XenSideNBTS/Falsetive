@@ -1,10 +1,3 @@
-# ©️ Dan Gazizullin, 2021-2023
-# This file is a part of Hikka Userbot
-# 🌐 https://github.com/hikariatama/Hikka
-# You can redistribute it and/or modify it under the terms of the GNU AGPLv3
-# 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
 
 import logging
 
@@ -262,7 +255,7 @@ class InlineQuery(AiogramInlineQuery):
         await self.answer(
             self._get_res(
                 "🚫 426",
-                "You need to update Netfoll before sending this request",
+                "You need to update falsetive before sending this request",
                 "https://img.icons8.com/fluency/344/approve-and-update.png",
             ),
             cache_time=0,

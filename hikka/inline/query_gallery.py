@@ -1,10 +1,3 @@
-# ©️ Dan Gazizullin, 2021-2023
-# This file is a part of Hikka Userbot
-# 🌐 https://github.com/hikariatama/Hikka
-# You can redistribute it and/or modify it under the terms of the GNU AGPLv3
-# 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
 
 import asyncio
 import logging
@@ -43,7 +36,7 @@ class QueryGallery(InlineUnit):
                           - `disable_security` - Whether to disable the security checks at all. Defaults to `False`
         :param force_me: Either this gallery buttons must be pressed only by owner scope or no
         :param always_allow: Users, that are allowed to press buttons in addition to previous rules
-        :param disable_security: By default, Netfoll will try to check security of gallery
+        :param disable_security: By default, falsetive will try to check security of gallery
                                  If you want to disable all security checks on this gallery in particular, pass `disable_security=True`
         :return: Status of answer
         """

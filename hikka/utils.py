@@ -21,8 +21,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import platform
 import asyncio
@@ -443,7 +443,7 @@ async def answer(
 ) -> typing.Union[InlineCall, InlineMessage, Message]:
     """
     Use this to give the response to a command
-    :param message: Message to answer to. Can be a tl message or Netfoll inline object
+    :param message: Message to answer to. Can be a tl message or falsetive inline object
     :param response: Response to send
     :param reply_markup: Reply markup to send. If specified, inline form will be used
     :return: Message or inline object
@@ -719,7 +719,7 @@ async def invite_inline_bot(
                 channel=peer,
                 user_id=client.loader.inline.bot_username,
                 admin_rights=ChatAdminRights(ban_users=True),
-                rank="Netfoll",
+                rank="falsetive",
             )
         )
 
@@ -739,7 +739,7 @@ async def convert_folders(client):
         folder = None
 
     if folder is not None:
-        folder.title = "netfoll"
+        folder.title = "falsetive"
 
         await client(
             UpdateDialogFilterRequest(
@@ -784,13 +784,13 @@ async def asset_channel(
     ):
         return client._channels_cache[title]["peer"], False
 
-    # legacy netfoll / hikka chats conversion to netfoll
+    # legacy falsetive / hikka chats conversion to falsetive
     if title.startswith("hikka-"):
-        title = title.replace("hikka-", "netfoll-")
+        title = title.replace("hikka-", "falsetive-")
 
     async for d in client.iter_dialogs():
         if (d.title == title) or (
-            (d.title.replace("hikka-", "netfoll-") == title)
+            (d.title.replace("hikka-", "falsetive-") == title)
             if d.title.startswith("hikka-")
             else False
         ):
@@ -844,9 +844,9 @@ async def asset_channel(
     if _folder:
         await fw_protect()
 
-        _folder = "netfoll" if _folder == "hikka" else _folder
+        _folder = "falsetive" if _folder == "hikka" else _folder
 
-        if _folder != "netfoll":
+        if _folder != "falsetive":
             raise NotImplementedError
 
         folders = await client(GetDialogFiltersRequest())
@@ -855,7 +855,7 @@ async def asset_channel(
             folder = next(
                 folder
                 for folder in folders
-                if hasattr(folder, "title") and folder.title == "netfoll"
+                if hasattr(folder, "title") and folder.title == "falsetive"
             )
         except Exception:
             folder = None
@@ -995,7 +995,7 @@ def get_platform_emoji(client: typing.Optional[CustomTelegramClient] = None) -> 
         will be broken.
     :return: Emoji entity in string
     """
-    BASE = ("<emoji document_id=5224301818313450421>👾</emoji> <b>Netfoll</b>",)
+    BASE = ("<emoji document_id=5224301818313450421>👾</emoji> <b>falsetive</b>",)
 
     if client and (
         client.loader.db.get("hikka.translations", "lang", False) or ""
@@ -1301,7 +1301,7 @@ def check_url(url: str) -> bool:
 
 def get_git_hash() -> typing.Union[str, bool]:
     """
-    Get current Netfoll git hash
+    Get current falsetive git hash
     :return: Git commit hash
     """
     try:
@@ -1312,12 +1312,12 @@ def get_git_hash() -> typing.Union[str, bool]:
 
 def get_commit_url() -> str:
     """
-    Get current Netfoll git commit url
+    Get current falsetive git commit url
     :return: Git commit url
     """
     try:
         hash_ = get_git_hash()
-        return f'<a href="https://github.com/MXRRI/Netfoll/commit/{hash_}">#{hash_[:7]}</a>'
+        return f'<a href="https://github.com/XenSideNBTS/falsetive/commit/{hash_}">#{hash_[:7]}</a>'
     except Exception:
         return "Unknown"
 
@@ -1603,7 +1603,7 @@ def get_git_info() -> typing.Tuple[str, str]:
     hash_ = get_git_hash()
     return (
         hash_,
-        f"https://github.com/MXRRI/Netfoll/commit/{hash_}" if hash_ else "",
+        f"https://github.com/XenSideNBTS/falsetive/commit/{hash_}" if hash_ else "",
     )
 
 

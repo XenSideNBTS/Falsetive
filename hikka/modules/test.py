@@ -44,7 +44,7 @@ class TestMod(loader.Module):
             " logs at verbosity</b> <code>{}</code><b>.</b>"
         ),
         "logs_caption": (
-            "<emoji document_id=5384307092599348179>🫡</emoji> <b>Netfoll logs with"
+            "<emoji document_id=5384307092599348179>🫡</emoji> <b>falsetive logs with"
             " verbosity</b> <code>{}</code>\n\n<emoji"
             " document_id=6318902906900711458>⚪️</emoji> <b>Version:"
             " {}.{}.{}</b>{}"
@@ -82,7 +82,7 @@ class TestMod(loader.Module):
             " уровня</b> <code>{}</code><b>.</b>"
         ),
         "logs_caption": (
-            "<emoji document_id=5384307092599348179>🫡</emoji> Логи <b>Netfoll</b> уровня"
+            "<emoji document_id=5384307092599348179>🫡</emoji> Логи <b>falsetive</b> уровня"
             "</b> <code>{}</code>\n\n<emoji document_id=6318902906900711458>⚪️</emoji>"
             " <b>Версия: {}.{}.{}</b>{}"
         ),
@@ -116,11 +116,11 @@ class TestMod(loader.Module):
             loader.ConfigValue(
                 "force_send_all",
                 False,
-                "⚠️ Do not touch, if you don't know what it does!\nBy default, Netfoll"
+                "⚠️ Do not touch, if you don't know what it does!\nBy default, falsetive"
                 " will try to determine, which client caused logs. E.g. there is a"
                 " module TestModule installed on Client1 and TestModule2 on Client2. By"
                 " default, Client2 will get logs from TestModule2, and Client1 will get"
-                " logs from TestModule. If this option is enabled, Netfoll will send all"
+                " logs from TestModule. If this option is enabled, falsetive will send all"
                 " logs to Client1 and Client2, even if it is not the one that caused"
                 " the log.",
                 validator=loader.validators.Boolean(),
@@ -321,7 +321,7 @@ class TestMod(loader.Module):
         logs = self.lookup("python").censor(logs)
 
         logs = BytesIO(logs.encode("utf-16"))
-        logs.name = "netfoll-logs.txt"
+        logs.name = "falsetive-logs.txt"
 
         ghash = utils.get_git_hash()
 
@@ -329,7 +329,7 @@ class TestMod(loader.Module):
             *main.netver,
             (
                 " <a"
-                f' href="https://github.com/MXRRI/Netfoll/commit/{ghash}">@{ghash[:8]}</a>'
+                f' href="https://github.com/XenSideNBTS/falsetive/commit/{ghash}">@{ghash[:8]}</a>'
                 if ghash
                 else ""
             ),
@@ -372,8 +372,8 @@ class TestMod(loader.Module):
     async def client_ready(self):
         chat, _ = await utils.asset_channel(
             self._client,
-            "netfoll-logs",
-            "🌘 Your Netfoll logs will appear in this chat",
+            "falsetive-logs",
+            "🌘 Your falsetive logs will appear in this chat",
             silent=True,
             invite_bot=True,
             avatar="https://github.com/hikariatama/assets/raw/master/hikka-logs.png",

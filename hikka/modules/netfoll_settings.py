@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 
 import logging
@@ -39,11 +39,11 @@ ALL_INVOKES = [
 
 
 @loader.tds
-class NetfollSettingsMod(loader.Module):
-    """Advanced settings for Netfoll Userbot"""
+class falsetiveSettingsMod(loader.Module):
+    """Advanced settings for falsetive Userbot"""
 
     strings = {
-        "name": "NetfollSettings",
+        "name": "falsetiveSettings",
         "watchers": (
             "<emoji document_id=5424885441100782420>👀</emoji>"
             " <b>Watchers:</b>\n\n<b>{}</b>"
@@ -100,7 +100,7 @@ class NetfollSettingsMod(loader.Module):
         "cmd404": (
             "<emoji document_id=5469791106591890404>🪄</emoji> <b>Command not found</b>"
         ),
-        "inline_settings": "⚙️ <b>Here you can configure your Netfoll settings</b>",
+        "inline_settings": "⚙️ <b>Here you can configure your falsetive settings</b>",
         "confirm_update": (
             "🧭 <b>Please, confirm that you want to update. Your userbot will be"
             " restarted</b>"
@@ -123,7 +123,7 @@ class NetfollSettingsMod(loader.Module):
         ),
         "nonick_warning": (
             "Warning! You enabled NoNick with default prefix! "
-            "You may get muted in Netfoll chats. Change prefix or "
+            "You may get muted in falsetive chats. Change prefix or "
             "disable NoNick!"
         ),
         "reply_required": (
@@ -131,12 +131,12 @@ class NetfollSettingsMod(loader.Module):
             " of user, which needs to be added to NoNick</b>"
         ),
         "deauth_confirm": (
-            "⚠️ <b>This action will fully remove Netfoll from this account and can't be"
-            " reverted!</b>\n\n<i>- Netfoll chats will be removed\n- Session will be"
-            " terminated and removed\n- Netfoll inline bot will be removed</i>"
+            "⚠️ <b>This action will fully remove falsetive from this account and can't be"
+            " reverted!</b>\n\n<i>- falsetive chats will be removed\n- Session will be"
+            " terminated and removed\n- falsetive inline bot will be removed</i>"
         ),
         "deauth_confirm_step2": (
-            "⚠️ <b>Are you really sure you want to delete Netfoll?</b>"
+            "⚠️ <b>Are you really sure you want to delete falsetive?</b>"
         ),
         "deauth_yes": "I'm sure",
         "deauth_no_1": "I'm not sure",
@@ -144,9 +144,9 @@ class NetfollSettingsMod(loader.Module):
         "deauth_no_3": "I'm struggling to answer",
         "deauth_cancel": "🚫 Cancel",
         "deauth_confirm_btn": "😢 Delete",
-        "uninstall": "😢 <b>Uninstalling Netfoll...</b>",
+        "uninstall": "😢 <b>Uninstalling falsetive...</b>",
         "uninstalled": (
-            "😢 <b>Netfoll uninstalled. Web interface is still active, you can add another"
+            "😢 <b>falsetive uninstalled. Web interface is still active, you can add another"
             " account</b>"
         ),
         "cmd_nn_list": (
@@ -166,23 +166,23 @@ class NetfollSettingsMod(loader.Module):
             " show...</b>"
         ),
         "privacy_leak": (
-            "⚠️ <b>This command gives access to your Netfoll web interface. It's not"
+            "⚠️ <b>This command gives access to your falsetive web interface. It's not"
             " recommended to run it in public group chats. Consider using it in <a"
             " href='tg://openmessage?user_id={}'>Saved messages</a>. Type"
             "</b> <code>{}proxypass force_insecure</code> <b>to ignore this warning</b>"
         ),
         "privacy_leak_nowarn": (
-            "⚠️ <b>This command gives access to your Netfoll web interface. It's not"
+            "⚠️ <b>This command gives access to your falsetive web interface. It's not"
             " recommended to run it in public group chats. Consider using it in <a"
             " href='tg://openmessage?user_id={}'>Saved messages</a>.</b>"
         ),
-        "opening_tunnel": "🔁 <b>Opening tunnel to Netfoll web interface...</b>",
+        "opening_tunnel": "🔁 <b>Opening tunnel to falsetive web interface...</b>",
         "tunnel_opened": "🎉 <b>Tunnel opened. This link is valid for about 1 hour</b>",
         "web_btn": "🌍 Web interface",
         "btn_yes": "🚸 Open anyway",
         "btn_no": "🔻 Cancel",
         "lavhost_web": (
-            "✌️ <b>This link leads to your Netfoll web interface on lavHost</b>\n\n<i>💡"
+            "✌️ <b>This link leads to your falsetive web interface on lavHost</b>\n\n<i>💡"
             " You'll need to authorize using lavHost credentials, specified on"
             " registration</i>"
         ),
@@ -226,7 +226,7 @@ class NetfollSettingsMod(loader.Module):
         "cmd404": (
             "<emoji document_id=5469791106591890404>🪄</emoji> <b>Команда не найдена</b>"
         ),
-        "inline_settings": "⚙️ <b>Здесь можно управлять настройками Netfoll</b>",
+        "inline_settings": "⚙️ <b>Здесь можно управлять настройками falsetive</b>",
         "confirm_update": "🧭 <b>Подтвердите обновление. Юзербот будет перезагружен</b>",
         "confirm_restart": "🔄 <b>Подтвердите перезагрузку</b>",
         "suggest_fs": "✅ Предлагать сохранение модулей",
@@ -244,10 +244,10 @@ class NetfollSettingsMod(loader.Module):
             "<emoji document_id=5312526098750252863>🚫</emoji> <b>Эту команду нужно"
             " выполнять в чате</b>"
         ),
-        "_cls_doc": "Дополнительные настройки Netfoll",
+        "_cls_doc": "Дополнительные настройки falsetive",
         "nonick_warning": (
             "Внимание! Ты включил NoNick со стандартным префиксом! "
-            "Тебя могут замьютить в чатах Netfoll. Измени префикс или "
+            "Тебя могут замьютить в чатах falsetive. Измени префикс или "
             "отключи глобальный NoNick!"
         ),
         "reply_required": (
@@ -255,20 +255,20 @@ class NetfollSettingsMod(loader.Module):
             " пользователя, для которого нужно включить NoNick</b>"
         ),
         "deauth_confirm": (
-            "⚠️ <b>Это действие полностью удалит Netfoll с этого аккаунта! Его нельзя"
-            " отменить</b>\n\n<i>- Все чаты, связанные с Netfoll будут удалены\n- Сессия"
-            " Netfoll будет сброшена\n- Инлайн бот Netfoll будет удален</i>"
+            "⚠️ <b>Это действие полностью удалит falsetive с этого аккаунта! Его нельзя"
+            " отменить</b>\n\n<i>- Все чаты, связанные с falsetive будут удалены\n- Сессия"
+            " falsetive будет сброшена\n- Инлайн бот falsetive будет удален</i>"
         ),
-        "deauth_confirm_step2": "⚠️ <b>Ты точно уверен, что хочешь удалить Netfoll?</b>",
+        "deauth_confirm_step2": "⚠️ <b>Ты точно уверен, что хочешь удалить falsetive?</b>",
         "deauth_yes": "Я уверен",
         "deauth_no_1": "Я не уверен",
         "deauth_no_2": "Не точно",
         "deauth_no_3": "Нет",
         "deauth_cancel": "🚫 Отмена",
         "deauth_confirm_btn": "😢 Удалить",
-        "uninstall": "😢 <b>Удаляю Netfoll...</b>",
+        "uninstall": "😢 <b>Удаляю falsetive...</b>",
         "uninstalled": (
-            "😢 <b>Netfoll удалён. Веб-интерфейс все еще активен, можно добавить другие"
+            "😢 <b>falsetive удалён. Веб-интерфейс все еще активен, можно добавить другие"
             " аккаунты!</b>"
         ),
         "cmd_nn_list": (
@@ -288,18 +288,18 @@ class NetfollSettingsMod(loader.Module):
             " показывать...</b>"
         ),
         "privacy_leak": (
-            "⚠️ <b>Эта команда дает доступ к веб-интерфейсу Netfoll. Ее выполнение в"
+            "⚠️ <b>Эта команда дает доступ к веб-интерфейсу falsetive. Ее выполнение в"
             " публичных чатах является угрозой безопасности. Предпочтительно выполнять"
             " ее в <a href='tg://openmessage?user_id={}'>Избранных сообщениях</a>."
             " Выполни</b> <code>{}proxypass force_insecure</code> <b>чтобы отключить"
             " это предупреждение</b>"
         ),
         "privacy_leak_nowarn": (
-            "⚠️ <b>Эта команда дает доступ к веб-интерфейсу Netfoll. Ее выполнение в"
+            "⚠️ <b>Эта команда дает доступ к веб-интерфейсу falsetive. Ее выполнение в"
             " публичных чатах является угрозой безопасности. Предпочтительно выполнять"
             " ее в <a href='tg://openmessage?user_id={}'>Избранных сообщениях</a>.</b>"
         ),
-        "opening_tunnel": "🔁 <b>Открываю тоннель к веб-интерфейсу Netfoll...</b>",
+        "opening_tunnel": "🔁 <b>Открываю тоннель к веб-интерфейсу falsetive...</b>",
         "tunnel_opened": (
             "🎉 <b>Тоннель открыт. Эта ссылка будет активна не более часа</b>"
         ),
@@ -307,7 +307,7 @@ class NetfollSettingsMod(loader.Module):
         "btn_yes": "🚸 Все равно открыть",
         "btn_no": "🔻 Закрыть",
         "lavhost_web": (
-            "✌️ <b>По этой ссылке ты попадешь в веб-интерфейс Netfoll на"
+            "✌️ <b>По этой ссылке ты попадешь в веб-интерфейс falsetive на"
             " lavHost</b>\n\n<i>💡 Тебе нужно будет авторизоваться, используя данные,"
             " указанные при настройке lavHost</i>"
         ),
@@ -350,18 +350,18 @@ class NetfollSettingsMod(loader.Module):
             if (
                 dialog.name
                 in {
-                    "netfoll-logs",
-                    "netfoll-onload",
-                    "netfoll-assets",
-                    "netfoll-backups",
-                    "netfoll-acc-switcher",
+                    "falsetive-logs",
+                    "falsetive-onload",
+                    "falsetive-assets",
+                    "falsetive-backups",
+                    "falsetive-acc-switcher",
                     "silent-tags",
                 }
                 and dialog.is_channel
                 and (
                     dialog.entity.participants_count == 1
                     or dialog.entity.participants_count == 2
-                    and dialog.name in {"netfoll-logs", "silent-tags"}
+                    and dialog.name in {"falsetive-logs", "silent-tags"}
                 )
                 or (
                     self._client.loader.inline.init_complete
@@ -375,7 +375,7 @@ class NetfollSettingsMod(loader.Module):
 
         folders = await self._client(GetDialogFiltersRequest())
 
-        if any(folder.title == "netfoll" for folder in folders):
+        if any(folder.title == "falsetive" for folder in folders):
             folder_id = max(
                 folders,
                 key=lambda x: x.id,
@@ -427,9 +427,9 @@ class NetfollSettingsMod(loader.Module):
         )
 
     @loader.owner
-    @loader.command(ru_doc="Удалить Netfoll")
-    async def uninstall_netfoll(self, message: Message):
-        """Uninstall Netfoll"""
+    @loader.command(ru_doc="Удалить falsetive")
+    async def uninstall_falsetive(self, message: Message):
+        """Uninstall falsetive"""
         await self.inline.form(
             self.strings("deauth_confirm"),
             message,
@@ -1012,9 +1012,9 @@ class NetfollSettingsMod(loader.Module):
         )
 
     @loader.owner
-    @loader.command(ru_doc="Открыть тоннель к веб-интерфейсу Netfoll")
+    @loader.command(ru_doc="Открыть тоннель к веб-интерфейсу falsetive")
     async def weburl(self, message: Message, force: bool = False):
-        """Opens web tunnel to your Netfoll web interface"""
+        """Opens web tunnel to your falsetive web interface"""
         if "LAVHOST" in os.environ:
             form = await self.inline.form(
                 self.strings("lavhost_web"),

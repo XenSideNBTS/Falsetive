@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 
 import re
@@ -38,10 +38,10 @@ class InlineStuffMod(loader.Module):
             " saved. Restart userbot to apply changes</b>"
         ),
         "this_is_hikka": (
-            "👾 <b>Hi! This is Netfoll, UserBot that is based on the best UserBot Hikka. You can"
+            "👾 <b>Hi! This is falsetive, UserBot that is based on the best UserBot Hikka. You can"
             " install it to your account!</b>\n\n<b>🌍 <a"
-            ' href="https://github.com/MXRRI/Netfoll">GitHub</a></b>\n<b>👾 <a'
-            ' href="https://t.me/AllNetfoll">Чат поддержки</a></b>'
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>👾 <a'
+            ' href="https://t.me/Allfalsetive">Чат поддержки</a></b>'
         ),
     }
 
@@ -57,13 +57,13 @@ class InlineStuffMod(loader.Module):
         ),
         "bot_updated": (
             "<emoji document_id=6318792204118656433>🎉</emoji> <b>Настройки сохранены."
-            " Для их применения нужно перезагрузить Netfoll</b>"
+            " Для их применения нужно перезагрузить falsetive</b>"
         ),
         "this_is_hikka": (
-            "👾 <b>Привет! Это Netfoll, ЮзерБот основанный на Hikka. Вы можете"
+            "👾 <b>Привет! Это falsetive, ЮзерБот основанный на Hikka. Вы можете"
             " установить на свой аккаунт!</b>\n\n<b>💎 <a"
-            ' href="https://github.com/MXRRI/Netfoll">GitHub</a></b>\n<b>👾 <a'
-            ' href="https://t.me/AllNetfoll">Чат поддержки</a></b>'
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>👾 <a'
+            ' href="https://t.me/Allfalsetive">Чат поддержки</a></b>'
         ),
     }
 
@@ -79,13 +79,13 @@ class InlineStuffMod(loader.Module):
         ),
         "bot_updated": (
             "<emoji document_id=6318792204118656433>🎉</emoji> <b>Налаштування збережені."
-            " Для їх застосування потрібно перезавантажити Netfoll</b>"
+            " Для їх застосування потрібно перезавантажити falsetive</b>"
         ),
         "this_is_hikka": (
-            "👾 <b>Привіт! Це Netfoll, заснований на Hikka. Ви можете"
+            "👾 <b>Привіт! Це falsetive, заснований на Hikka. Ви можете"
             " встановити на свій аккаунт!</b>\n\n<b>💎 <a"
-            ' href="https://github.com/MXRRI/Netfoll">GitHub</a></b>\n<b>👾 <a'
-            ' href="https://t.me/AllNetfoll">Чат підтримки</a></b>'
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>👾 <a'
+            ' href="https://t.me/Allfalsetive">Чат підтримки</a></b>'
         ),
     }
 
@@ -163,8 +163,8 @@ class InlineStuffMod(loader.Module):
         es_doc="<nombre de usuario> - Cambia el nombre de usuario del bot de inline",
         kk_doc="<пайдаланушы аты> - Инлайн боттың пайдаланушы атын өзгерту",
     )
-    async def ch_netfoll_bot(self, message: Message):
-        """<username> - Change your Netfoll inline bot username"""
+    async def ch_falsetive_bot(self, message: Message):
+        """<username> - Change your falsetive inline bot username"""
         args = utils.get_args_raw(message).strip("@")
         if (
             not args
@@ -196,7 +196,7 @@ class InlineStuffMod(loader.Module):
             return
 
         await message.answer_photo(
-            "https://github.com/MXRRI/Netfoll/raw/Dev/assets/banner.png",
+            "https://github.com/XenSideNBTS/falsetive/raw/Dev/assets/banner.png",
             caption=self.strings("this_is_hikka"),
         )
 
@@ -210,7 +210,7 @@ class InlineStuffMod(loader.Module):
                 "/cancel",
                 "/setinline",
                 f"@{self.inline.bot_username}",
-                "👾 Netfoll Inline",
+                "👾 falsetive Inline",
             ]:
                 m = await conv.send_message(msg)
                 r = await conv.get_response()

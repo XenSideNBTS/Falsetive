@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import logging
@@ -85,7 +85,7 @@ PRESETS = {
 
 @loader.tds
 class Presets(loader.Module):
-    """Suggests new Netfoll users a packs of modules to load"""
+    """Suggests new falsetive users a packs of modules to load"""
 
     strings = {
         "name": "Presets",

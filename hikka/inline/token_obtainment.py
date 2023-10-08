@@ -1,10 +1,3 @@
-# ©️ Dan Gazizullin, 2021-2023
-# This file is a part of Hikka Userbot
-# 🌐 https://github.com/hikariatama/Hikka
-# You can redistribute it and/or modify it under the terms of the GNU AGPLv3
-# 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
 
 import asyncio
 import io
@@ -61,14 +54,14 @@ class TokenObtainment(InlineUnit):
                 else:
                     # Generate and set random username for bot
                     uid = utils.rand(6)
-                    username = f"@netfoll_{uid}_bot"
+                    username = f"@falsetive_{uid}_bot"
             else:
                 # Generate and set random username for bot
                 uid = utils.rand(6)
-                username = f"@netfoll_{uid}_bot"
+                username = f"@falsetive_{uid}_bot"
 
             for msg in [
-                f"👾 Netfoll Userbot of {self._name}"[:64],
+                f"👾 falsetive Userbot of {self._name}"[:64],
                 username,
                 "/setuserpic",
                 username,
@@ -121,7 +114,7 @@ class TokenObtainment(InlineUnit):
             # Just return `True`
             return True
 
-        logger.info("Netfoll can't find token in database, taking it from BotFather")
+        logger.info("falsetive can't find token in database, taking it from BotFather")
 
         if not self._db.get(__name__, "no_mute", False):
             await utils.dnd(
@@ -178,7 +171,7 @@ class TokenObtainment(InlineUnit):
                         "hikka.inline",
                         "custom_bot",
                         False,
-                    ) and not re.search(r"@netfoll_[0-9a-zA-Z]{6}_bot", button.text):
+                    ) and not re.search(r"@falsetive_[0-9a-zA-Z]{6}_bot", button.text):
                         continue
 
                         await fw_protect()

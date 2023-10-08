@@ -5,8 +5,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import contextlib
@@ -384,7 +384,7 @@ class TelegramLogsHandler(logging.Handler):
                     logfile = io.BytesIO(
                         "".join(self._queue[client_id]).encode("utf-8")
                     )
-                    logfile.name = "netfoll-logs.txt"
+                    logfile.name = "falsetive-logs.txt"
                     logfile.seek(0)
                     await self._mods[client_id].inline.bot.send_document(
                         self._mods[client_id]._logchat,
@@ -487,7 +487,7 @@ _tg_formatter = logging.Formatter(
 )
 
 rotating_handler = RotatingFileHandler(
-    filename="netfoll.log",
+    filename="falsetive.log",
     mode="a",
     maxBytes=10 * 1024 * 1024,
     backupCount=1,

@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 
 import ast
@@ -473,7 +473,7 @@ class Module:
             if version.__version__ < ver:
                 _raise(
                     RuntimeError(
-                        f"Library requires Netfoll version {'{}.{}.{}'.format(*ver)}+"
+                        f"Library requires falsetive version {'{}.{}.{}'.format(*ver)}+"
                     )
                 )
 
@@ -833,7 +833,7 @@ class ModuleConfig(dict):
         if callable(ret):
             try:
                 # Compatibility tweak
-                # does nothing in Netfoll
+                # does nothing in falsetive
                 ret = ret(message)
             except Exception:
                 ret = ret()

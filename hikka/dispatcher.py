@@ -21,8 +21,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import collections
@@ -376,8 +376,8 @@ class CommandDispatcher:
         if (
             message.is_channel
             and message.is_group
-            and message.chat.title.startswith("netfoll-")
-            and message.chat.title != "netfoll-logs"
+            and message.chat.title.startswith("falsetive-")
+            and message.chat.title != "falsetive-logs"
         ):
             if not watcher:
                 logger.warning("Ignoring message in datachat \\ logging chat")

@@ -5,8 +5,8 @@
 #
 # 🔒      Licensed under the GNU AGPLv3
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 from telethon.tl.types import Message
 from telethon.utils import get_display_name
@@ -17,7 +17,7 @@ from ..inline.types import InlineQuery
 import psutil
 
 @loader.tds
-class NetfollInfoMod(loader.Module):
+class falsetiveInfoMod(loader.Module):
     """Show userbot info"""
 
     strings = {
@@ -46,11 +46,11 @@ class NetfollInfoMod(loader.Module):
         "_cfg_banner": "URL to image banner",
         "desc": (
             "<emoji document_id=4929415445443773080>🚀</emoji>"
-            " <b>Netfoll</b>\n\nTelegram userbot with a lot of features, like inline"
+            " <b>falsetive</b>\n\nTelegram userbot with a lot of features, like inline"
             " galleries, forms, lists lists based on Hikka. Userbot - software,"
             " running on your Telegram account. If you write a command to any chat, it"
             " will get executed right there. Check out live examples at <a"
-            ' href="https://github.com/MXRRI/Netfoll">GitHub</a>'
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a>'
         ),
     }
 
@@ -79,10 +79,10 @@ class NetfollInfoMod(loader.Module):
             " изменен</b>"
         ),
         "desc": (
-            "<emoji document_id=5062291541624619917>😀</emoji> <b>Netfoll</b>"
+            "<emoji document_id=5062291541624619917>😀</emoji> <b>falsetive</b>"
             " Юзербот, основанный на Hikka с богатым функционалом."
-            " Юзербот работает во всех чатах от имени твоего аккаунта. <b>Исходный код Netfoll можешь всегда посмотреть на <a"
-            ' href="https://github.com/MXRRI/Netfoll">GitHub</a>'
+            " Юзербот работает во всех чатах от имени твоего аккаунта. <b>Исходный код falsetive можешь всегда посмотреть на <a"
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a>'
         ),
     }
 
@@ -111,10 +111,10 @@ class NetfollInfoMod(loader.Module):
             " змінено</b>"
         ),
         "desc": (
-            "<emoji document_id=5062291541624619917>😀</emoji> <b>Netfoll</b>"
+            "<emoji document_id=5062291541624619917>😀</emoji> <b>falsetive</b>"
             " Юзербот, заснований на Hikka з багатим функціоналом."
             " Юзер бот працює у всіх чатах від імені Твого аккаунта. <b>Вихідний код Netfol можеш завжди подивитися на <a"
-            ' href="https://github.com/MXRRI/Netfoll">GitHub</a>'
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a>'
         ),
     }
 
@@ -135,7 +135,7 @@ class NetfollInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "banner_url",
-                "https://github.com/MXRRI/Netfoll/raw/stable/assets/banner.png",
+                "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/banner.png",
                 lambda: self.strings("_cfg_banner"),
                 validator=loader.validators.Link(),
             ),
@@ -145,11 +145,11 @@ class NetfollInfoMod(loader.Module):
         self._me = await self._client.get_me()
         if (
             self.config["banner_url"]
-            == "https://github.com/MXRRI/Netfoll/raw/stable/assets/banner.png"
+            == "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/banner.png"
         ):
             self.config[
                 "banner_url"
-            ] = "https://github.com/MXRRI/Netfoll/raw/stable/assets/banner.png"
+            ] = "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/banner.png"
 
     def _render_info(self, inline: bool) -> str:
         me = '<b><a href="tg://user?id={}">{}</a></b>'.format(
@@ -211,7 +211,7 @@ class NetfollInfoMod(loader.Module):
                     (
                         utils.get_platform_emoji()
                         if self._client.hikka_me.premium and not inline
-                        else "👾 Netfoll",
+                        else "👾 falsetive",
                     ),
                 )
             )
@@ -242,7 +242,7 @@ class NetfollInfoMod(loader.Module):
                 if self.config["banner_url"]
                 else {"message": self._render_info(True)}
             ),
-            "thumb": ("https://github.com/MXRRI/Netfoll/raw/Stable/assets/bot_pfp.png"),
+            "thumb": ("https://github.com/XenSideNBTS/falsetive/raw/Stable/assets/bot_pfp.png"),
             "reply_markup": self._get_mark(),
         }
 
@@ -281,10 +281,10 @@ class NetfollInfoMod(loader.Module):
                     await message.delete()
 
     @loader.command(
-        ru_doc="Отправить информацию по типу 'Что такое Netfoll?'",
+        ru_doc="Отправить информацию по типу 'Что такое falsetive?'",
     )
-    async def whonetfoll(self, message: Message):
-        """Send info aka 'What is Netfoll?'"""
+    async def whofalsetive(self, message: Message):
+        """Send info aka 'What is falsetive?'"""
         await utils.answer(message, self.strings("desc"))
 
     @loader.command(

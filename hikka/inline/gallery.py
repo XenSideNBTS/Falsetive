@@ -1,10 +1,4 @@
-# ©️ Dan Gazizullin, 2021-2023
-# This file is a part of Hikka Userbot
-# 🌐 https://github.com/hikariatama/Hikka
-# You can redistribute it and/or modify it under the terms of the GNU AGPLv3
-# 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+
 
 import asyncio
 import contextlib
@@ -87,10 +81,10 @@ class Gallery(InlineUnit):
                         be loaded. Toggle this attribute, if your callback is too slow to load photos
                         in real time
         :param gif: Whether the gallery will be filled with gifs. If you omit this argument and specify
-                    gifs in `next_handler`, Netfoll will try to determine the filetype of these images
-        :param manual_security: By default, Netfoll will try to inherit inline buttons security from the caller (command)
+                    gifs in `next_handler`, falsetive will try to determine the filetype of these images
+        :param manual_security: By default, falsetive will try to inherit inline buttons security from the caller (command)
                                 If you want to avoid this, pass `manual_security=True`
-        :param disable_security: By default, Netfoll will try to inherit inline buttons security from the caller (command)
+        :param disable_security: By default, falsetive will try to inherit inline buttons security from the caller (command)
                                  If you want to disable all security checks on this gallery in particular, pass `disable_security=True`
         :param silent: Whether the gallery must be sent silently (w/o "Opening gallery..." message)
         :return: If gallery is sent, returns :obj:`InlineMessage`, otherwise returns `False`

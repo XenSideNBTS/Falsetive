@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 
 import contextlib
@@ -36,7 +36,7 @@ from ..security import (
 
 
 @loader.tds
-class NetfollSecurityMod(loader.Module):
+class falsetiveSecurityMod(loader.Module):
     """Control security settings"""
 
     service_strings = {
@@ -74,7 +74,7 @@ class NetfollSecurityMod(loader.Module):
     }
 
     strings = {
-        "name": "NetfollSecurity",
+        "name": "falsetiveSecurity",
         "no_command": "🚫 <b>Command</b> <code>{}</code> <b>not found!</b>",
         "permissions": (
             "🔐 <b>Here you can configure permissions for</b> <code>{}{}</code>"

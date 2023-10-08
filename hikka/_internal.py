@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import atexit
@@ -40,8 +40,8 @@ def restart():
     if "HIKKA_DO_NOT_RESTART" in os.environ:
         print(
             "Got in a loop, exiting\nYou probably need to manually remove existing"
-            " packages and then restart Netfoll. Run `pip uninstall -y telethon"
-            " telethon-mod hikka-tl pyrogram hikka-pyro`, then restart Netfoll."
+            " packages and then restart falsetive. Run `pip uninstall -y telethon"
+            " telethon-mod hikka-tl pyrogram hikka-pyro`, then restart falsetive."
         )
         sys.exit(0)
 

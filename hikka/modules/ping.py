@@ -1,7 +1,7 @@
 # ©️ Hikka by Dan Gazizullin, 2021-2023
-# ©️ Netfoll by Artur Bykov, 2022-20?? 
-# This file is a part of Netfoll Userbot
-# 🌐 https://github.com/MXRRI/Netfoll
+# ©️ falsetive by Artur Bykov, 2022-20?? 
+# This file is a part of falsetive Userbot
+# 🌐 https://github.com/XenSideNBTS/falsetive
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
 # ---------------------------------------------------------------------------------
@@ -21,9 +21,9 @@
 # ⣼⠄⠄⠄⠄⠄⠈⢿⡘⠃⠄⠄⠄⠄⠄⠄⠠⠈⠄⠄⠄⢠⣸⣠⡞⠄⠄⠄⣿
 # ⣤⠄⠄⠄⠄⠄⠄⢸⣇⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⣿⠟⠄⠄⠄⣸⣿
 #
-# 👾 Module for Telethon User Bot (Netfoll, Hikka, FTG)
+# 👾 Module for Telethon User Bot (falsetive, Hikka, FTG)
 # ---------------------------------------------------------------------------------
-# meta developer: @netfoll
+# meta developer: @falsetive
 # meta description: Configurable ping
 
 import datetime

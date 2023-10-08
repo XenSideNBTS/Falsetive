@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import os
 
@@ -84,14 +84,14 @@ class CoreMod(loader.Module):
         "db_cleared": (
             "<emoji document_id=5197474765387864959>👍</emoji> <b>Database cleared</b>"
         ),
-        "netfoll": (
+        "falsetive": (
             "{} <b>{}.{}.{}</b> <i>{}</i>\n\n<b><emoji"
             " document_id=5377437404078546699>💜</emoji> <b>Hikka-TL:"
             "</b> <i>{}</i>\n{}"
             " <b>Hikka-Pyro:</b> <i>{}</i>\n"
             "<emoji document_id=5188666899860298925>🌒</emoji> <b>Hikka:</b> <i>V1.6.1</i>\n<emoji"
             " document_id=6327560044845991305>👾</emoji>"
-            " <b>Developers: netfoll.t.me/3</b>"
+            " <b>Developers: falsetive.t.me/3</b>"
         ),
         "confirm_cleardb": "⚠️ <b>Are you sure, that you want to clear database?</b>",
         "cleardb_confirm": "🗑 Clear database",
@@ -108,7 +108,7 @@ class CoreMod(loader.Module):
             " unstable branch</b> <code>{}</code><b>!</b>"
         ),
         "prefix_collision": (
-            "<emoji document_id=5469654973308476699>💣</emoji> <b>Your Dragon and Netfoll"
+            "<emoji document_id=5469654973308476699>💣</emoji> <b>Your Dragon and falsetive"
             " prefixes must be different!</b>"
         ),
     }
@@ -175,14 +175,14 @@ class CoreMod(loader.Module):
         "db_cleared": (
             "<emoji document_id=5197474765387864959>👍</emoji> <b>База очищена</b>"
         ),
-        "netfoll": (
+        "falsetive": (
             "{} <b>{}.{}.{}</b> <i>{}</i>\n\n<b><emoji"
             " document_id=5377437404078546699>💜</emoji> <b>Hikka-TL:"
             "</b> <i>{}</i>\n{}"
             " <b>Hikka-Pyro:</b> <i>{}</i>\n"
             "<emoji document_id=5188666899860298925>🌒</emoji> <b>Hikka:</b> <i>V1.6.1</i>\n<emoji"
             " document_id=6327560044845991305>👾</emoji>"
-            " <b>Разработчики: netfoll.t.me/3</b>"
+            " <b>Разработчики: falsetive.t.me/3</b>"
         ),
         "_cls_doc": "Управление базовыми настройками юзербота",
         "confirm_cleardb": "⚠️ <b>Вы уверены, что хотите сбросить базу данных?</b>",
@@ -202,7 +202,7 @@ class CoreMod(loader.Module):
         ),
         "prefix_collision": (
             "<emoji document_id=5469654973308476699>💣</emoji> <b>Префиксы Dragon и"
-            " Netfoll должны отличаться!</b>"
+            " falsetive должны отличаться!</b>"
         ),
     }
 
@@ -268,14 +268,14 @@ class CoreMod(loader.Module):
         "db_cleared": (
             "<emoji document_id=5197474765387864959>👍</emoji> <b>База очищена</b>"
         ),
-        "netfoll": (
+        "falsetive": (
             "{} <b>{}.{}.{}</b> <i>{}</i>\n\n<b><emoji"
             " document_id=5377437404078546699>💜</emoji> <b>Hikka-TL:"
             "</b> <i>{}</i>\n{}"
             " <b>Hikka-Pyro:</b> <i>{}</i>\n"
             "<emoji document_id=5188666899860298925>🌒</emoji> <b>Hikka:</b> <i>V1.6.1</i>\n<emoji"
             " document_id=6327560044845991305>👾</emoji>"
-            " <b>Розробники: netfoll.t.me/3</b>"
+            " <b>Розробники: falsetive.t.me/3</b>"
         ),
         "_cls_doc": "Управління базовими настройками юзербота",
         "confirm_cleardb": "⚠️ <b>Ви впевнені, що хочете скинути базу даних?</b>",
@@ -295,7 +295,7 @@ class CoreMod(loader.Module):
         ),
         "prefix_collision": (
             "<emoji document_id=5469654973308476699>💣</emoji> <b>Префікси Dragon і"
-            " Netfoll повинні відрізнятися!</b>"
+            " falsetive повинні відрізнятися!</b>"
         ),
     }
 
@@ -325,21 +325,21 @@ class CoreMod(loader.Module):
         return f"{str(chatid)}.{module}" if module else chatid
 
     @loader.command(
-        ru_doc="Показать версию Netfoll",
+        ru_doc="Показать версию falsetive",
     )
-    async def netfollcmd(self, message: Message):
-        """Get Netfoll version"""
+    async def falsetivecmd(self, message: Message):
+        """Get falsetive version"""
         await utils.answer_file(
             message,
-            "https://github.com/MXRRI/Netfoll/raw/stable/assets/banner.png",
-            self.strings("netfoll").format(
+            "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/banner.png",
+            self.strings("falsetive").format(
                 (
                     (
                         utils.get_platform_emoji(self._client)
                         + ("" if "LAVHOST" in os.environ else "")
                     )
                     if self._client.hikka_me.premium and CUSTOM_EMOJIS
-                    else "👾 <b>Netfoll</b>"
+                    else "👾 <b>falsetive</b>"
                 ),
                 *version.netver,
                 utils.get_commit_url(),

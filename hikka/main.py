@@ -22,8 +22,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 
 import argparse
@@ -418,7 +418,7 @@ class Hikka:
 
     async def _web_banner(self):
         """Shows web banner"""
-        logging.info("✅ Netfoll is now can be setted up in browser!")
+        logging.info("✅ falsetive is now can be setted up in browser!")
         logging.info("🌐 Go to %s", self.web.url)
 
     async def wait_for_web_auth(self, token: str) -> bool:
@@ -453,8 +453,8 @@ class Hikka:
                     connection=self.conn,
                     proxy=self.proxy,
                     connection_retries=None,
-                    device_model=(f"Netfoll UB"),
-                    app_version=(f"Netfoll v{netver[0]}.{netver[1]}.{netver[2]}"),
+                    device_model=(f"falsetive UB"),
+                    app_version=(f"falsetive v{netver[0]}.{netver[1]}.{netver[2]}"),
                 )
 
                 client.start(phone)
@@ -494,7 +494,7 @@ class Hikka:
                     connection=self.conn,
                     proxy=self.proxy,
                     connection_retries=None,
-                    device_model="Netfoll",
+                    device_model="falsetive",
                 )
 
                 client.start(
@@ -582,7 +582,7 @@ class Hikka:
                     else ""
                 )
                 logging.info(
-                    "👾 Netfoll %s is working!\n🔏 GitHub commit SHA: %s (%s)\n%s%s",
+                    "👾 falsetive %s is working!\n🔏 GitHub commit SHA: %s (%s)\n%s%s",
                     ".".join(list(map(str, list(netver)))),
                     build[:7],
                     upd,

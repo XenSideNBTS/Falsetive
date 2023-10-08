@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import contextlib
@@ -17,13 +17,13 @@ from ..inline.types import InlineCall
 
 @loader.tds
 class UpdateNotifierMod(loader.Module):
-    """Tracks latest Netfoll releases, and notifies you, if update is required"""
+    """Tracks latest falsetive releases, and notifies you, if update is required"""
 
     strings = {
         "name": "UpdateNotifier",
         "update_required": (
-            "👾 <b>Netfoll Update available!</b>\n\nNew GitHub commit pushed.\n💿"
-            " <b>Netfoll <s>{}</s> -> {}</b>\n\nChanges: 👇🏻\n\n{}"
+            "👾 <b>falsetive Update available!</b>\n\nNew GitHub commit pushed.\n💿"
+            " <b>falsetive <s>{}</s> -> {}</b>\n\nChanges: 👇🏻\n\n{}"
         ),
         "more": "\n<i><b>🎥 And {} more...</b></i>",
         "_cfg_doc_disable_notifications": "Disable update notifications",
@@ -34,8 +34,8 @@ class UpdateNotifierMod(loader.Module):
 
     strings_ru = {
         "update_required": (
-            "👾 <b>Новая версия Netfoll!</b>\n\nВ GitHub вышла новая версия.\n💿"
-            " <b>Netfoll <s>{}</s> -> {}</b>\n\nИзменения: 👇🏻\n\n{}"
+            "👾 <b>Новая версия falsetive!</b>\n\nВ GitHub вышла новая версия.\n💿"
+            " <b>falsetive <s>{}</s> -> {}</b>\n\nИзменения: 👇🏻\n\n{}"
         ),
         "more": "\n<i><b>🎥 И еще {}...</b></i>",
         "_cfg_doc_disable_notifications": "Отключить уведомления об обновлениях",
@@ -46,8 +46,8 @@ class UpdateNotifierMod(loader.Module):
 
     strings_uk = {
         "update_required": (
-            "👾 <b>Нова версія Netfoll!</b>\n\nВ GitHub вийшла нова версія.\n💿"
-            " <b>Netfoll <s>{}</s> -> {}</b>\n\nИзменения: 👇🏻\n\n{}"
+            "👾 <b>Нова версія falsetive!</b>\n\nВ GitHub вийшла нова версія.\n💿"
+            " <b>falsetive <s>{}</s> -> {}</b>\n\nИзменения: 👇🏻\n\n{}"
         ),
         "more": "\n<i><b>🎥 І ще {}...</b></i>",
         "_cfg_doc_disable_notifications": "Вимкнути сповіщення про оновлення",
@@ -110,8 +110,8 @@ class UpdateNotifierMod(loader.Module):
 
         self._markup = lambda: self.inline.generate_markup(
             [
-                {"text": self.strings("update"), "data": "netfoll_update"},
-                {"text": self.strings("ignore"), "data": "netfoll_upd_ignore"},
+                {"text": self.strings("update"), "data": "falsetive_update"},
+                {"text": self.strings("ignore"), "data": "falsetive_upd_ignore"},
             ]
         )
 
@@ -136,7 +136,7 @@ class UpdateNotifierMod(loader.Module):
                 self.tg_id,
                 self.strings("update_required").format(
                     utils.get_git_hash()[:6],
-                    '<a href="https://github.com/MXRRI/Netfoll/compare/{}...{}">{}</a>'.format(
+                    '<a href="https://github.com/XenSideNBTS/falsetive/compare/{}...{}">{}</a>'.format(
                         utils.get_git_hash()[:12],
                         self.get_latest()[:12],
                         self.get_latest()[:6],
@@ -165,10 +165,10 @@ class UpdateNotifierMod(loader.Module):
     @loader.callback_handler()
     async def update(self, call: InlineCall):
         """Process update buttons clicks"""
-        if call.data not in {"netfoll_update", "netfoll_upd_ignore"}:
+        if call.data not in {"falsetive_update", "falsetive_upd_ignore"}:
             return
 
-        if call.data == "netfoll_upd_ignore":
+        if call.data == "falsetive_upd_ignore":
             self.set("ignore_permanent", self.get_latest())
             await call.answer(self.strings("latest_disabled"))
             return

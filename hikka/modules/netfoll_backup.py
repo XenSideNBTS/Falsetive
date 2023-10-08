@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import datetime
@@ -22,11 +22,11 @@ logger = logging.getLogger(__name__)
 
 
 @loader.tds
-class NetfollBackupMod(loader.Module):
+class falsetiveBackupMod(loader.Module):
     """Automatic database backup"""
 
     strings = {
-        "name": "NetfollBackup",
+        "name": "falsetiveBackup",
         "period": (
             "⌚️ <b>Unit «ALPHA»</b> creates database backups periodically. You can"
             " change this behavior later.\n\nPlease, select the periodicity of"
@@ -49,7 +49,7 @@ class NetfollBackupMod(loader.Module):
             "❗️<b>Советую включить функцию АвтоБэкапа</b> <i>(Unit Alpha)</i>"
             " <b><i>Время от времени Юнит будет создавать бэкапы вашего конфига, чтобы легко вернуть все данные в случае сбоя </i>\n"
             "В случае потери конфига разработчики никак не вернут ваши данные\n\n"
-            "</b>‼️<b> Не с кем не делитесь файлами конфига, даже с разработчиками Netfoll! Они содержат конфиденциальные данные\n\n"
+            "</b>‼️<b> Не с кем не делитесь файлами конфига, даже с разработчиками falsetive! Они содержат конфиденциальные данные\n\n"
             "<i>Чтобы в ручную изменить время автобэкапа используйте </i></b><code>.autobackup\n\n"
             "</code>🔻 <b>Выберите срок Автобэкапа</b>"
         ),
@@ -88,7 +88,7 @@ class NetfollBackupMod(loader.Module):
         if not self.get("period"):
             await self.inline.bot.send_photo(
                 self.tg_id,
-                photo="https://github.com/MXRRI/Netfoll/raw/stable/assets/BackUp.png",
+                photo="https://github.com/XenSideNBTS/falsetive/raw/stable/assets/BackUp.png",
                 caption=self.strings("period"),
                 reply_markup=self.inline.generate_markup(
                     utils.chunks(
@@ -116,7 +116,7 @@ class NetfollBackupMod(loader.Module):
 
         self._backup_channel, _ = await utils.asset_channel(
             self._client,
-            "netfoll-backups",
+            "falsetive-backups",
             "📼 Your database backups will appear here",
             silent=True,
             archive=True,
@@ -185,7 +185,7 @@ class NetfollBackupMod(loader.Module):
             )
 
             backup = io.BytesIO(json.dumps(self._db).encode("utf-8"))
-            backup.name = "netfoll-db-backup-{}.json".format(
+            backup.name = "falsetive-db-backup-{}.json".format(
                 getattr(datetime, "datetime", datetime).now().strftime("%d-%m-%Y-%H-%M")
             )
 
@@ -194,5 +194,5 @@ class NetfollBackupMod(loader.Module):
         except loader.StopLoop:
             raise
         except Exception:
-            logger.exception("NetfollBackup failed")
+            logger.exception("falsetiveBackup failed")
             await asyncio.sleep(60)

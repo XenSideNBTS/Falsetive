@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import collections
@@ -107,8 +107,8 @@ class Database(dict):
         try:
             self._assets, _ = await utils.asset_channel(
                 self._client,
-                "netfoll-assets",
-                "🌆 Your Netfoll assets will be stored here",
+                "falsetive-assets",
+                "🌆 Your falsetive assets will be stored here",
                 archive=True,
                 avatar="https://raw.githubusercontent.com/hikariatama/assets/master/hikka-assets.png",
             )

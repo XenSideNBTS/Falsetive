@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import logging
 import os
@@ -29,46 +29,46 @@ class QuickstartMod(loader.Module):
 
     strings = {
         "name": "Quickstart",
-        "base": """👋🏻 <b>Hi!</b> I am a <B> inline-bot Netfoll</B>, then let's go through a little training and configure Netfoll for your needs
+        "base": """👋🏻 <b>Hi!</b> I am a <B> inline-bot falsetive</B>, then let's go through a little training and configure falsetive for your needs
 
-🤙🏻 <b>We advise you to join </b><a href="https://t.me/AllNetfoll "><b>our chat!</b></a><b> There you can find help if you don't understand something or if there are problems
+🤙🏻 <b>We advise you to join </b><a href="https://t.me/Allfalsetive "><b>our chat!</b></a><b> There you can find help if you don't understand something or if there are problems
 
 </b> ⚡️ <b>You can search for interesting modules using </b>@hikkamods_bot<b>, use it as a built-in installation on the required module.
-</b> 💥 <i>You can find channels of confirmed developers can be found </i><a href="https://t.me/AllNetfoll/279 "><I> am here
+</b> 💥 <i>You can find channels of confirmed developers can be found </i><a href="https://t.me/Allfalsetive/279 "><I> am here
 
 </i></a> 🎯 <b>A brief guide</b>:
 
 <i> 🔸 In order to find out the modules installed on you, use .mods
 🔹 To install the module from the file, use </i> <code>.lm</code><i> (</i><code>.loadmod</code><i>) and to delete </i>.unloadmod
-<i> 🔺 More usage guides can be found in the chat </i><a href="https://t.me/AllNetfoll/3373 ">Netfoll
+<i> 🔺 More usage guides can be found in the chat </i><a href="https://t.me/Allfalsetive/3373 ">falsetive
 
-</a><i> 🤝 <b>Netfoll</b> is based on <b>Hikka</b>, therefore supports modules from <b>Hikka</b>, <b>FTG</b>, <b>DragonUB</b>, <b>GeekTG</b> and their own.</i>""",
+</a><i> 🤝 <b>falsetive</b> is based on <b>Hikka</b>, therefore supports modules from <b>Hikka</b>, <b>FTG</b>, <b>DragonUB</b>, <b>GeekTG</b> and their own.</i>""",
         "railway": (
             "🚂 <b>Your userbot is installed on Railway</b>. This platform has only"
             " <b>500 free hours per month</b>. Once this limit is reached, your"
-            " <b>Netfoll will be frozen</b>. Next month <b>you will need to go to"
+            " <b>falsetive will be frozen</b>. Next month <b>you will need to go to"
             " https://railway.app and restart it</b>."
         ),
         "language_saved": "🇬🇧 Language saved!",
         "language": "🇬🇧 English",
-        "btn_support": "👾 Netfoll Chat",
+        "btn_support": "👾 falsetive Chat",
     }
 
     strings_ru = {
-        "base": """👋🏻 <b>Привет!</b> Я являюсь<b> Inline-ботом Netfoll</b>, давай пройдем небольшое обучение и настроим Netfoll под твои нужды 
+        "base": """👋🏻 <b>Привет!</b> Я являюсь<b> Inline-ботом falsetive</b>, давай пройдем небольшое обучение и настроим falsetive под твои нужды 
 
-🤙🏻 <b>Советуем вступить в </b><a href="https://t.me/AllNetfoll"><b>наш чат!</b></a><b> Там вы сможете найти помощь если чего то не поймете или если будут проблемы
+🤙🏻 <b>Советуем вступить в </b><a href="https://t.me/Allfalsetive"><b>наш чат!</b></a><b> Там вы сможете найти помощь если чего то не поймете или если будут проблемы
 
 </b>⚡️ <b>Искать интересные модули можно с помощью </b>@hikkamods_bot<b>, используйте его как Inline или как обычного бота и для установки нажмите ⛩ Install на требуемом модуле. 
-</b>💥 <i>Вы можете найти каналы подтверждённых разработчиков можно найти </i><a href="https://t.me/AllNetfoll/4/61"><i>тут
+</b>💥 <i>Вы можете найти каналы подтверждённых разработчиков можно найти </i><a href="https://t.me/Allfalsetive/4/61"><i>тут
 
 </i></a>🎯 <b>Краткий гайд</b>:
 
 <i>🔸 Для того чтобы узнать модули установленные у вас используй .mods
 🔹 Для установки модуля с файла используй</i> <code>.lm</code><i> (</i><code>.loadmod</code><i>) а для удаления </i>.unloadmod
-<i>🔺 Больше гайдов по использованию можете найти в чате </i><a href="https://t.me/AllNetfoll">Netfoll
+<i>🔺 Больше гайдов по использованию можете найти в чате </i><a href="https://t.me/Allfalsetive">falsetive
 
-</a><i>🤝 <b>Netfoll</b> основан на <b>Hikka</b>, поэтому поддерживает модули <b>Hikka</b>, <b>FTG</b>, <b>DragonUB</b> и <b>GeekTG</b> и свои собственные.</i>
+</a><i>🤝 <b>falsetive</b> основан на <b>Hikka</b>, поэтому поддерживает модули <b>Hikka</b>, <b>FTG</b>, <b>DragonUB</b> и <b>GeekTG</b> и свои собственные.</i>
 """,
         "railway": (
             "🚂 <b>Твой юзербот установлен на Railway</b>. На этой платформе ты"
@@ -78,7 +78,7 @@ class QuickstartMod(loader.Module):
         ),
         "language_saved": "🇷🇺 Язык сохранен!",
         "language": "🇷🇺 Русский",
-        "btn_support": "👾 Чат Netfoll",
+        "btn_support": "👾 Чат falsetive",
     }
 
     async def client_ready(self):
@@ -90,7 +90,7 @@ class QuickstartMod(loader.Module):
                 [
                     {
                         "text": self.strings("btn_support"),
-                        "url": "https://t.me/AllNetfoll",
+                        "url": "https://t.me/Allfalsetive",
                     }
                 ],
             ]

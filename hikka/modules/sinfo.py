@@ -2,20 +2,20 @@
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
 #
 # ---------------------------------------------------------------------------------
-#     ▀▄   ▄▀   👾 Module for Netfoll UserBot (based on Hikka 1.6.0)
+#     ▀▄   ▄▀   👾 Module for falsetive UserBot (based on Hikka 1.6.0)
 #    ▄█▀███▀█▄  🔒 Licensed under the GNU GPLv3
-#   █▀███████▀█ ⚠️ @DarkModules & @Netfoll
+#   █▀███████▀█ ⚠️ @DarkModules & @falsetive
 #   █ █▀▀▀▀▀█ █
 #      ▀▀ ▀▀
 # ---------------------------------------------------------------------------------
 # Name: SysInfo
 # Description: Show system info
-# Author: Netfoll Team
+# Author: falsetive Team
 # Commands:
 # .sinfo
 # ---------------------------------------------------------------------------------
 
-# meta developer: @Netfoll
+# meta developer: @falsetive
 
 from .. import loader, utils
 import platform
@@ -30,7 +30,7 @@ def bytes_to_megabytes(b: int) -> int:
 
 @loader.tds
 class SysInfoMod(loader.Module):
-    """Simple System Info for Netfoll UserBot (And Hikka Support)"""
+    """Simple System Info for falsetive UserBot (And Hikka Support)"""
 
     strings = {
         "name": "SysInfo",

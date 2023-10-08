@@ -5,8 +5,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import ast
 import asyncio
@@ -133,13 +133,13 @@ class LoaderMod(loader.Module):
         ),
         "inline_init_failed": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>This module requires"
-            " Netfoll inline feature and initialization of InlineManager"
+            " falsetive inline feature and initialization of InlineManager"
             " failed</b>\n<i>Please, remove one of your old bots from @BotFather and"
             " restart userbot to load this module</i>"
         ),
         "version_incompatible": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>This module requires"
-            " Netfoll {}+\nPlease, update with</b> <code>.update</code>"
+            " falsetive {}+\nPlease, update with</b> <code>.update</code>"
         ),
         "ffmpeg_required": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>This module requires"
@@ -313,7 +313,7 @@ class LoaderMod(loader.Module):
         ),
         "version_incompatible": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>Этому модулю"
-            " требуется Netfoll версии {}+\nОбновись с помощью</b> <code>.update</code>"
+            " требуется falsetive версии {}+\nОбновись с помощью</b> <code>.update</code>"
         ),
         "ffmpeg_required": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>Этому модулю"
@@ -342,7 +342,7 @@ class LoaderMod(loader.Module):
         ),
         "inline_init_failed": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>Этому модулю нужен"
-            " NetfollInline, а инициализация менеджера инлайна неудачна</b>\n<i>Попробуй"
+            " falsetiveInline, а инициализация менеджера инлайна неудачна</b>\n<i>Попробуй"
             " удалить одного из старых ботов в @BotFather и перезагрузить юзербота</i>"
         ),
         "_cmd_doc_dlmod": "Скачивает и устаналвивает модуль из репозитория",
@@ -505,7 +505,7 @@ class LoaderMod(loader.Module):
         ),
         "version_incompatible": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>Этому модулю"
-            " требуется Netfoll версии {}+\nОбновись с помощью</b> <code>.update</code>"
+            " требуется falsetive версии {}+\nОбновись с помощью</b> <code>.update</code>"
         ),
         "ffmpeg_required": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>Этому модулю"
@@ -534,7 +534,7 @@ class LoaderMod(loader.Module):
         ),
         "inline_init_failed": (
             "<emoji document_id=5454225457916420314>😖</emoji> <b>Этому модулю нужен"
-            " NetfollInline, а инициализация менеджера инлайна неудачна</b>\n<i>Попробуй"
+            " falsetiveInline, а инициализация менеджера инлайна неудачна</b>\n<i>Попробуй"
             " удалить одного из старых ботов в @BotFather и перезагрузить юзербота</i>"
         ),
         "_cmd_doc_dlmod": "Скачивает и устаналвивает модуль из репозитория",
@@ -645,7 +645,7 @@ class LoaderMod(loader.Module):
                 "ADDITIONAL_REPOS",
                 # Currenly the trusted developers are specified
                 [
-                    "https://github.com/MXRRI/Modules/raw/master"
+                    "https://github.com/XenSideNBTS/Modules/raw/master"
                     "https://github.com/Den4ikSuperOstryyPer4ik/Astro-Modules/raw/main"
                     "https://github.com/hikariatama/host/raw/master",
                     "https://github.com/MoriSummerz/ftg-mods/raw/main",
@@ -1074,8 +1074,8 @@ class LoaderMod(loader.Module):
                 await utils.answer(message, self.strings("inline_init_failed"))
             return
 
-        if re.search(r"# ?scope: ?netfoll_min", doc):
-            ver = re.search(r"# ?scope: ?netfoll_min ((?:\d+\.){2}\d+)", doc).group(1)
+        if re.search(r"# ?scope: ?falsetive_min", doc):
+            ver = re.search(r"# ?scope: ?falsetive_min ((?:\d+\.){2}\d+)", doc).group(1)
             ver_ = tuple(map(int, ver.split(".")))
             if main.__version__ < ver_:
                 if isinstance(message, Message):

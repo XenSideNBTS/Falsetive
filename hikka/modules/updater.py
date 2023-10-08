@@ -3,8 +3,8 @@
 # 🌐 https://github.com/hikariatama/Hikka
 # You can redistribute it and/or modify it under the terms of the GNU AGPLv3
 # 🔑 https://www.gnu.org/licenses/agpl-3.0.html
-# Netfoll Team modifided Hikka files for Netfoll
-# 🌐 https://github.com/MXRRI/Netfoll
+# falsetive Team modifided Hikka files for falsetive
+# 🌐 https://github.com/XenSideNBTS/falsetive
 
 import asyncio
 import contextlib
@@ -67,8 +67,8 @@ class UpdaterMod(loader.Module):
         "update_confirm": (
             "❓ <b>Are you sure you"
             " want to update?\n\n<a"
-            ' href="https://github.com/MXRRI/Netfoll/{}">{}</a> ⤑ <a'
-            ' href="https://github.com/MXRRI/Netfoll/{}">{}</a></b>'
+            ' href="https://github.com/XenSideNBTS/falsetive/{}">{}</a> ⤑ <a'
+            ' href="https://github.com/XenSideNBTS/falsetive/{}">{}</a></b>'
         ),
         "no_update": "🚸 <b>You are on the latest version, pull updates anyway?</b>",
         "cancel": "🚫 Cancel",
@@ -139,8 +139,8 @@ class UpdaterMod(loader.Module):
         "update_confirm": (
             "❓ <b>Ты уверен, что"
             " хочешь обновиться??\n\n<a"
-            ' href="https://github.com/MXRRI/Netfoll/commit/{}">{}</a> ⤑ <a'
-            ' href="https://github.com/MXRRI/Netfoll/commit/{}">{}</a></b>'
+            ' href="https://github.com/XenSideNBTS/falsetive/commit/{}">{}</a> ⤑ <a'
+            ' href="https://github.com/XenSideNBTS/falsetive/commit/{}">{}</a></b>'
         ),
         "no_update": "🚸 <b>У тебя последняя версия. Обновиться принудительно?</b>",
         "cancel": "🚫 Отмена",
@@ -204,8 +204,8 @@ class UpdaterMod(loader.Module):
         "update_confirm": (
             "❓ <b>Ти впевнений, що"
             " хочеш оновитися??\n\n<a"
-            ' href="https://github.com/MXRRI/Netfoll/commit/{}">{}</a> ⤑ <a'
-            ' href="https://github.com/MXRRI/Netfoll/commit/{}">{}</a></b>'
+            ' href="https://github.com/XenSideNBTS/falsetive/commit/{}">{}</a> ⤑ <a'
+            ' href="https://github.com/XenSideNBTS/falsetive/commit/{}">{}</a></b>'
         ),
         "no_update": "🚸 <b>У вас остання версія. Оновитися примусово?</b>",
         "cancel": "🚫 Скасування",
@@ -232,7 +232,7 @@ class UpdaterMod(loader.Module):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
                 "GIT_ORIGIN_URL",
-                "https://github.com/MXRRI/Netfoll",
+                "https://github.com/XenSideNBTS/falsetive",
                 lambda: self.strings("origin_cfg_doc"),
                 validator=loader.validators.Link(),
             )
@@ -312,7 +312,7 @@ class UpdaterMod(loader.Module):
                 if self._client.hikka_me.premium
                 and CUSTOM_EMOJIS
                 and isinstance(msg_obj, Message)
-                else "Netfoll"
+                else "falsetive"
             ),
 #            if "SEGFAULT" in os.environ
 #            else self.strings("segfault_restart").format(
@@ -526,18 +526,18 @@ class UpdaterMod(loader.Module):
                             )
                             if dialog.name
                             in {
-                                "netfoll-logs",
-                                "netfoll-onload",
-                                "netfoll-assets",
-                                "netfoll-backups",
-                                "netfoll-acc-switcher",
+                                "falsetive-logs",
+                                "falsetive-onload",
+                                "falsetive-assets",
+                                "falsetive-backups",
+                                "falsetive-acc-switcher",
                                 "silent-tags",
                             }
                             and dialog.is_channel
                             and (
                                 dialog.entity.participants_count == 1
                                 or dialog.entity.participants_count == 2
-                                and dialog.name in {"netfoll-logs", "silent-tags"}
+                                and dialog.name in {"falsetive-logs", "silent-tags"}
                             )
                             or (
                                 self._client.loader.inline.init_complete
@@ -566,7 +566,7 @@ class UpdaterMod(loader.Module):
             )
         except Exception:
             logger.critical(
-                "Can't create Netfoll folder. Possible reasons are:\n"
+                "Can't create falsetive folder. Possible reasons are:\n"
                 "- User reached the limit of folders in Telegram\n"
                 "- User got floodwait\n"
                 "Ignoring error and adding folder addition to ignore list"
