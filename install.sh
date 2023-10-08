@@ -3,23 +3,23 @@
 
 runin() {
 	# Runs the arguments, piping stderr to logfile
-	{ "$@" 2>>../netfoll-install.log || return $?; } | while read -r line; do
-		printf "%s\n" "$line" >>../netfoll-install.log
+	{ "$@" 2>>../falsetive-install.log || return $?; } | while read -r line; do
+		printf "%s\n" "$line" >>../falsetive-install.log
 	done
 }
 
 runout() {
 	# Runs the arguments, piping stderr to logfile
-	{ "$@" 2>>netfoll-install.log || return $?; } | while read -r line; do
-		printf "%s\n" "$line" >>netfoll-install.log
+	{ "$@" 2>>falsetive-install.log || return $?; } | while read -r line; do
+		printf "%s\n" "$line" >>falsetive-install.log
 	done
 }
 
 errorin() {
-	cat ../netfoll-install.log
+	cat ../falsetive-install.log
 }
 errorout() {
-	cat netfoll-install.log
+	cat falsetive-install.log
 }
 
 SUDO_CMD=""
@@ -40,20 +40,20 @@ printf "\n\n\e[3;34;40m Установка. Пожалуйста, подожди
 
 printf "\r\033[0;34mPreparing for installation...\e[0m"
 
-touch netfoll-install.log
+touch falsetive-install.log
 if [ ! x"$SUDO_USER" = x"" ]; then
-	chown "$SUDO_USER:" netfoll-install.log
+	chown "$SUDO_USER:" falsetive-install.log
 fi
 
-if [ -d "Netfoll/hikka" ]; then
-	cd Netfoll || {
+if [ -d "falsetive/hikka" ]; then
+	cd falsetive || {
 		printf "\rError: Install git package and re-run installer"
 		exit 6
 	}
 	DIR_CHANGED="yes"
 fi
 if [ -f ".setup_complete" ]; then
-	# If Netfoll is already installed by this script
+	# If falsetive is already installed by this script
 	PYVER=""
 	if echo "$OSTYPE" | grep -qE '^linux-gnu.*'; then
 		PYVER="3"
@@ -68,7 +68,7 @@ fi
 
 ##############################################################################
 
-echo "Installing..." >netfoll-install.log
+echo "Installing..." >falsetive-install.log
 
 if echo "$OSTYPE" | grep -qE '^linux-gnu.*' && [ -f '/etc/debian_version' ]; then
 	PKGMGR="apt install -y"
@@ -89,7 +89,7 @@ elif echo "$OSTYPE" | grep -qE '^darwin.*'; then
 	PKGMGR="brew install"
 	PYVER="3"
 else
-	printf "\r\033[1;31mUnrecognised OS.\e[0m Please follow 'Manual installation' at \033[0;94mhttps://github.com/MXRRI/Netfoll/#-installation\e[0m"
+	printf "\r\033[1;31mUnrecognised OS.\e[0m Please follow 'Manual installation' at \033[0;94mhttps://github.com/MXRRI/falsetive/#-installation\e[0m"
 	exit 1
 fi
 
@@ -125,13 +125,13 @@ printf "\n\r\033[0;34mCloning repo...\e[0m"
 ##############################################################################
 
 # shellcheck disable=SC2086
-${SUDO_CMD}rm -rf Netfoll
+${SUDO_CMD}rm -rf falsetive
 # shellcheck disable=SC2086
-runout ${SUDO_CMD}git clone https://github.com/MXRRI/Netfoll || {
+runout ${SUDO_CMD}git clone https://github.com/MXRRI/falsetive || {
 	errorout "Clone failed."
 	exit 3
 }
-cd Netfoll || {
+cd falsetive || {
 	printf "\r\033[0;33mRun: \033[1;33mpkg install git\033[0;33m and restart installer"
 	exit 7
 }
@@ -146,7 +146,7 @@ runin "$SUDO_CMD python$PYVER" -m pip install -r requirements.txt --upgrade --us
 	errorin "Requirements failed!"
 	exit 4
 }
-rm -f ../netfoll-install.log
+rm -f ../falsetive-install.log
 touch .setup_complete
 
 printf "\r\033[K\033[0;32mDependencies installed!\e[0m"
