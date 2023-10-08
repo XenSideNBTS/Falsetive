@@ -8,7 +8,7 @@
 # 🌐 https://github.com/XenSideNBTS/falsetive
 
 __version__ = (1, 6, 1)
-netver = (0, 3, 3)
+netver = (0, 1, 0)
 netrev = ""
 import os
 import git
