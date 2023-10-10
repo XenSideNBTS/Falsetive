@@ -135,7 +135,7 @@ class falsetiveInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "banner_url",
-                "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/banner.png",
+                "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/msbanner.png",
                 lambda: self.strings("_cfg_banner"),
                 validator=loader.validators.Link(),
             ),
@@ -145,11 +145,11 @@ class falsetiveInfoMod(loader.Module):
         self._me = await self._client.get_me()
         if (
             self.config["banner_url"]
-            == "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/banner.png"
+            == "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/msbanner.png"
         ):
             self.config[
                 "banner_url"
-            ] = "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/banner.png"
+            ] = "https://github.com/XenSideNBTS/falsetive/raw/stable/assets/msbanner.png"
 
     def _render_info(self, inline: bool) -> str:
         me = '<b><a href="tg://user?id={}">{}</a></b>'.format(
@@ -211,7 +211,7 @@ class falsetiveInfoMod(loader.Module):
                     (
                         utils.get_platform_emoji()
                         if self._client.hikka_me.premium and not inline
-                        else "👾 falsetive",
+                        else " falsetive",
                     ),
                 )
             )
