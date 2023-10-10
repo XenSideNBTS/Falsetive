@@ -1,5 +1,5 @@
 <h1>falsetive userbot</h1></>
-<h2>Telegram userbot, Based on <a href="https://github.com/hikariatama/hikka">Hikka</a></h2>
+<h2>Telegram userbot, Based on <a href="https://github.com/hikariatama/hikka">Hikka</a> + <a href="https://github.com/MXRRI/Netfoll">Netfoll</a></h2>
 <ul>
 <li> <b>Security</b> improvements</li>
 
