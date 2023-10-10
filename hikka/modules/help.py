@@ -144,7 +144,7 @@ class HelpMod(loader.Module):
             (
                 DRAGON_EMOJI
                 if is_dragon
-                else "<emoji document_id=5370869711888194012>👾</emoji>"
+                else "<emoji document_id=5370869711888194012>☕</emoji>"
             ),
             _name,
         )
@@ -245,7 +245,7 @@ class HelpMod(loader.Module):
                 (
                     utils.get_platform_emoji(self._client)
                     if self._client.hikka_me.premium and CUSTOM_EMOJIS
-                    else "👾"
+                    else "☕"
                 )
             ),
         )

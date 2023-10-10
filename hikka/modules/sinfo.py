@@ -2,7 +2,7 @@
 # 🌐 https://www.gnu.org/licenses/agpl-3.0.html
 #
 # ---------------------------------------------------------------------------------
-#     ▀▄   ▄▀   👾 Module for falsetive UserBot (based on Hikka 1.6.0)
+#     ▀▄   ▄▀   ☕ Module for falsetive UserBot (based on Hikka 1.6.0)
 #    ▄█▀███▀█▄  🔒 Licensed under the GNU GPLv3
 #   █▀███████▀█ ⚠️ @DarkModules & @falsetive
 #   █ █▀▀▀▀▀█ █

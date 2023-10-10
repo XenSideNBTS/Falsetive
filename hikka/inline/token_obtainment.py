@@ -61,7 +61,7 @@ class TokenObtainment(InlineUnit):
                 username = f"@falsetive_{uid}_bot"
 
             for msg in [
-                f"👾 falsetive Userbot of {self._name}"[:64],
+                f"☕ falsetive Userbot of {self._name}"[:64],
                 username,
                 "/setuserpic",
                 username,
@@ -225,7 +225,7 @@ class TokenObtainment(InlineUnit):
                     for msg in [
                         "/setinline",
                         button.text,
-                        "👾 Inline-Commands...",
+                        "☕ Inline-Commands...",
                         "/setinlinefeedback",
                         button.text,
                         "Enabled",

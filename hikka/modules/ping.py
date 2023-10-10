@@ -21,7 +21,7 @@
 # ⣼⠄⠄⠄⠄⠄⠈⢿⡘⠃⠄⠄⠄⠄⠄⠄⠠⠈⠄⠄⠄⢠⣸⣠⡞⠄⠄⠄⣿
 # ⣤⠄⠄⠄⠄⠄⠄⢸⣇⡇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⣿⠟⠄⠄⠄⣸⣿
 #
-# 👾 Module for Telethon User Bot (falsetive, Hikka, FTG)
+# ☕ Module for Telethon User Bot (falsetive, Hikka, FTG)
 # ---------------------------------------------------------------------------------
 # meta developer: @falsetive
 # meta description: Configurable ping
@@ -94,7 +94,7 @@ class PingMod(loader.Module):
         """- Get your ping"""
         ping = self.config["ping_message"]
         start = time.perf_counter_ns()
-        message = await utils.answer(message, "👾")
+        message = await utils.answer(message, "☕")
         try:
             await utils.answer(
                 message,

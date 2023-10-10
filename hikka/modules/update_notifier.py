@@ -22,7 +22,7 @@ class UpdateNotifierMod(loader.Module):
     strings = {
         "name": "UpdateNotifier",
         "update_required": (
-            "👾 <b>falsetive Update available!</b>\n\nNew GitHub commit pushed.\n💿"
+            "☕ <b>falsetive Update available!</b>\n\nNew GitHub commit pushed.\n💿"
             " <b>falsetive <s>{}</s> -> {}</b>\n\nChanges: 👇🏻\n\n{}"
         ),
         "more": "\n<i><b>🎥 And {} more...</b></i>",
@@ -34,7 +34,7 @@ class UpdateNotifierMod(loader.Module):
 
     strings_ru = {
         "update_required": (
-            "👾 <b>Новая версия falsetive!</b>\n\nВ GitHub вышла новая версия.\n💿"
+            "☕ <b>Новая версия falsetive!</b>\n\nВ GitHub вышла новая версия.\n💿"
             " <b>falsetive <s>{}</s> -> {}</b>\n\nИзменения: 👇🏻\n\n{}"
         ),
         "more": "\n<i><b>🎥 И еще {}...</b></i>",
@@ -46,7 +46,7 @@ class UpdateNotifierMod(loader.Module):
 
     strings_uk = {
         "update_required": (
-            "👾 <b>Нова версія falsetive!</b>\n\nВ GitHub вийшла нова версія.\n💿"
+            "☕ <b>Нова версія falsetive!</b>\n\nВ GitHub вийшла нова версія.\n💿"
             " <b>falsetive <s>{}</s> -> {}</b>\n\nИзменения: 👇🏻\n\n{}"
         ),
         "more": "\n<i><b>🎥 І ще {}...</b></i>",

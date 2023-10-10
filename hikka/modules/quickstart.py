@@ -51,7 +51,7 @@ class QuickstartMod(loader.Module):
         ),
         "language_saved": "🇬🇧 Language saved!",
         "language": "🇬🇧 English",
-        "btn_support": "👾 falsetive Chat",
+        "btn_support": "☕ falsetive Chat",
     }
 
     strings_ru = {
@@ -78,7 +78,7 @@ class QuickstartMod(loader.Module):
         ),
         "language_saved": "🇷🇺 Язык сохранен!",
         "language": "🇷🇺 Русский",
-        "btn_support": "👾 Чат falsetive",
+        "btn_support": "☕ Чат falsetive",
     }
 
     async def client_ready(self):

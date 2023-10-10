@@ -178,7 +178,7 @@ class falsetiveInfoMod(loader.Module):
             "🐳": "<emoji document_id=6334586503968065308>🐳</emoji>",
             "🕶": "<emoji document_id=5866460679594053316>📱</emoji>",
             "🐈‍⬛": "<emoji document_id=6334750507294262724>🐈‍⬛</emoji>",
-            "👾": "<emoji document_id=5866169914603081371>🐧</emoji>",
+            "☕": "<emoji document_id=5866169914603081371>🐧</emoji>",
             "🧩": "<emoji document_id=6334313137889609341>🧩</emoji>",
             "😎": "<emoji document_id=5364105417569868801>😎</emoji>",
         }.items():

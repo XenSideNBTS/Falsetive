@@ -983,7 +983,7 @@ def get_named_platform() -> str:
     if "SEGFAULT" in os.environ:
         return "⚙️ Segfault"
     
-    return f"👾 {platform.system()}"
+    return f"☕ {platform.system()}"
 
 
 def get_platform_emoji(client: typing.Optional[CustomTelegramClient] = None) -> str:
@@ -995,7 +995,7 @@ def get_platform_emoji(client: typing.Optional[CustomTelegramClient] = None) -> 
         will be broken.
     :return: Emoji entity in string
     """
-    BASE = ("<emoji document_id=5224301818313450421>👾</emoji> <b>falsetive</b>",)
+    BASE = ("<emoji document_id=5370737061823258342>☕️</emoji> <b>falsetive</b>",)
 
     if client and (
         client.loader.db.get("hikka.translations", "lang", False) or ""
@@ -1159,8 +1159,7 @@ def smart_split(
         <<< ["<b>Hello, world!</b>"]
     """
 
-    # Authored by @bsolute
-    # https://t.me/LonamiWebs/27777
+
 
     encoded = text.encode("utf-16le")
     pending_entities = entities

@@ -583,7 +583,7 @@ class Hikka:
                     else ""
                 )
                 logging.info(
-                    "👾 falsetive %s is working!\n🔏 GitHub commit SHA: %s (%s)\n%s%s",
+                    "☕ falsetive %s is working!\n🔏 GitHub commit SHA: %s (%s)\n%s%s",
                     ".".join(list(map(str, list(netver)))),
                     build[:7],
                     upd,

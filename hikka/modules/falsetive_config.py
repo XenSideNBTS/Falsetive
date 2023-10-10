@@ -86,7 +86,7 @@ class falsetiveConfigMod(loader.Module):
         "remove_item_btn": "➖ Remove item",
         "show_hidden": "🚸 Show value",
         "hide_value": "🔒 Hide value",
-        "builtin": "👾 Built-in",
+        "builtin": "☕ Built-in",
         "external": "⛓ External",
         "libraries": "📦 Libraries",
     }
@@ -152,7 +152,7 @@ class falsetiveConfigMod(loader.Module):
         "remove_item_btn": "➖ Удалить",
         "show_hidden": "🚸 Показать",
         "hide_value": "🔒 Скрыть",
-        "builtin": "👾 Встроенные",
+        "builtin": "☕ Встроенные",
         "external": "⛓ Установленные",
         "libraries": "📦 Библиотеки",
     }
@@ -218,7 +218,7 @@ class falsetiveConfigMod(loader.Module):
         "remove_item_btn": "➖ Видалити",
         "show_hidden": "🚸 Показавши",
         "hide_value": "🔒 Сховавши",
-        "builtin": "👾 Убудований",
+        "builtin": "☕ Убудований",
         "external": "⛓ Установлений",
         "libraries": "📦 Бібліотеки",
     }

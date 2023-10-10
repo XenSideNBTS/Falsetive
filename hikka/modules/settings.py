@@ -90,7 +90,7 @@ class CoreMod(loader.Module):
             "</b> <i>{}</i>\n{}"
             " <b>Hikka-Pyro:</b> <i>{}</i>\n"
             "<emoji document_id=5188666899860298925>🌒</emoji> <b>Hikka:</b> <i>V1.6.1</i>\n<emoji"
-            " document_id=6327560044845991305>👾</emoji>"
+            " document_id=6327560044845991305>☕</emoji>"
             " <b>Developers: falsetive.t.me/3</b>"
         ),
         "confirm_cleardb": "⚠️ <b>Are you sure, that you want to clear database?</b>",
@@ -181,7 +181,7 @@ class CoreMod(loader.Module):
             "</b> <i>{}</i>\n{}"
             " <b>Hikka-Pyro:</b> <i>{}</i>\n"
             "<emoji document_id=5188666899860298925>🌒</emoji> <b>Hikka:</b> <i>V1.6.1</i>\n<emoji"
-            " document_id=6327560044845991305>👾</emoji>"
+            " document_id=6327560044845991305>☕</emoji>"
             " <b>Разработчики: falsetive.t.me</b>"
         ),
         "_cls_doc": "Управление базовыми настройками юзербота",
@@ -274,7 +274,7 @@ class CoreMod(loader.Module):
             "</b> <i>{}</i>\n{}"
             " <b>Hikka-Pyro:</b> <i>{}</i>\n"
             "<emoji document_id=5188666899860298925>🌒</emoji> <b>Hikka:</b> <i>V1.6.1</i>\n<emoji"
-            " document_id=6327560044845991305>👾</emoji>"
+            " document_id=6327560044845991305>☕</emoji>"
             " <b>Розробники: falsetive.t.me/3</b>"
         ),
         "_cls_doc": "Управління базовими настройками юзербота",
@@ -339,7 +339,7 @@ class CoreMod(loader.Module):
                         + ("" if "LAVHOST" in os.environ else "")
                     )
                     if self._client.hikka_me.premium and CUSTOM_EMOJIS
-                    else "👾 <b>falsetive</b>"
+                    else "☕ <b>falsetive</b>"
                 ),
                 *version.netver,
                 utils.get_commit_url(),
@@ -485,7 +485,7 @@ class CoreMod(loader.Module):
                 (
                     DRAGON_EMOJI
                     if is_dragon
-                    else "<emoji document_id=5370869711888194012>👾</emoji>"
+                    else "<emoji document_id=5370869711888194012>☕</emoji>"
                 ),
                 newprefix=utils.escape_html(
                     self.get_prefix() if is_dragon else args[0]

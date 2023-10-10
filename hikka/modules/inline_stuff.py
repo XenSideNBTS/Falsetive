@@ -38,9 +38,9 @@ class InlineStuffMod(loader.Module):
             " saved. Restart userbot to apply changes</b>"
         ),
         "this_is_hikka": (
-            "👾 <b>Hi! This is falsetive, UserBot that is based on the best UserBot Hikka. You can"
+            "☕ <b>Hi! This is falsetive, UserBot that is based on the best UserBot Hikka. You can"
             " install it to your account!</b>\n\n<b>🌍 <a"
-            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>👾 <a'
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>☕ <a'
             ' href="https://t.me/Allfalsetive">Чат поддержки</a></b>'
         ),
     }
@@ -60,9 +60,9 @@ class InlineStuffMod(loader.Module):
             " Для их применения нужно перезагрузить falsetive</b>"
         ),
         "this_is_hikka": (
-            "👾 <b>Привет! Это falsetive, ЮзерБот основанный на Hikka. Вы можете"
+            "☕ <b>Привет! Это falsetive, ЮзерБот основанный на Hikka. Вы можете"
             " установить на свой аккаунт!</b>\n\n<b>💎 <a"
-            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>👾 <a'
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>☕ <a'
             ' href="https://t.me/Allfalsetive">Чат поддержки</a></b>'
         ),
     }
@@ -82,9 +82,9 @@ class InlineStuffMod(loader.Module):
             " Для їх застосування потрібно перезавантажити falsetive</b>"
         ),
         "this_is_hikka": (
-            "👾 <b>Привіт! Це falsetive, заснований на Hikka. Ви можете"
+            "☕ <b>Привіт! Це falsetive, заснований на Hikka. Ви можете"
             " встановити на свій аккаунт!</b>\n\n<b>💎 <a"
-            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>👾 <a'
+            ' href="https://github.com/XenSideNBTS/falsetive">GitHub</a></b>\n<b>☕ <a'
             ' href="https://t.me/Allfalsetive">Чат підтримки</a></b>'
         ),
     }
@@ -112,7 +112,7 @@ class InlineStuffMod(loader.Module):
 
         await message.delete()
 
-        m = await message.respond("👾", reply_to=utils.get_topic(message))
+        m = await message.respond("☕", reply_to=utils.get_topic(message))
 
         await self.inline.gallery(
             message=m,
@@ -210,7 +210,7 @@ class InlineStuffMod(loader.Module):
                 "/cancel",
                 "/setinline",
                 f"@{self.inline.bot_username}",
-                "👾 falsetive Inline",
+                "☕ falsetive Inline",
             ]:
                 m = await conv.send_message(msg)
                 r = await conv.get_response()
