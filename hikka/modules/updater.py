@@ -304,11 +304,11 @@ class UpdaterMod(loader.Module):
                 if self._client.hikka_me.premium
                 and CUSTOM_EMOJIS
                 and isinstance(msg_obj, Message)
-                else "<emoji document_id=5364105417569868801>😎</emoji> <b>LumiHost</b>"
+                else "<emoji document_id=5364105417569868801>😎</emoji> <b>falsetive</b>"
             )
             if "LUMIHOST" in os.environ
             else self.strings("lumihost_restart").format(
-                '<emoji document_id=5364105417569868801>😎</emoji> <b>LumiHost</b>'
+                '<emoji document_id=5364105417569868801>😎</emoji> <b>falsetive</b>'
                 if self._client.hikka_me.premium
                 and CUSTOM_EMOJIS
                 and isinstance(msg_obj, Message)
