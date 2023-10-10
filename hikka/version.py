@@ -7,8 +7,8 @@
 # falsetive Team modifided Hikka files for falsetive
 # 🌐 https://github.com/XenSideNBTS/falsetive
 
-__version__ = (1, 7, 1)
-netver = (0, 1, 3)
+__version__ = (0, 1, 4)
+netver = (0, 1, 4)
 netrev = ""
 import os
 import git

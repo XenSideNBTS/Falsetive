@@ -88,7 +88,7 @@ class falsetiveBackupMod(loader.Module):
         if not self.get("period"):
             await self.inline.bot.send_photo(
                 self.tg_id,
-                photo="https://github.com/XenSideNBTS/falsetive/raw/stable/assets/BackUp.png",
+                photo="https://github.com/XenSideNBTS/falsetive/raw/stable/assets/msBackUp.png",
                 caption=self.strings("period"),
                 reply_markup=self.inline.generate_markup(
                     utils.chunks(
@@ -120,7 +120,7 @@ class falsetiveBackupMod(loader.Module):
             "📼 Your database backups will appear here",
             silent=True,
             archive=True,
-            avatar="https://github.com/hikariatama/assets/raw/master/hikka-backups.png",
+            avatar="https://github.com/XenSideNBTS/falsetive/assets/raw/stable/msBackUp.png",
             _folder="hikka",
         )
 
